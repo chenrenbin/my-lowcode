@@ -1,0 +1,15 @@
+@import './base.css';
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #bfbfbf;
+    border-radius: 10px;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+}
