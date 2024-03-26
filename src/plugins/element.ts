@@ -38,7 +38,9 @@ import {
     ElAlert,
     ElRadioButton,
     ElRadioGroup,
-    ElInfiniteScroll
+    ElInfiniteScroll,
+    ElTabs, 
+    ElTabPane
 } from 'element-plus'
 
 const components = [
@@ -76,7 +78,9 @@ const components = [
     ElPagination,
     ElAlert,
     ElRadioButton,
-    ElRadioGroup
+    ElRadioGroup,
+    ElTabs, 
+    ElTabPane
 ]
 
 const plugins = [ElLoading, ElInfiniteScroll]

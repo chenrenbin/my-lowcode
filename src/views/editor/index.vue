@@ -4,9 +4,9 @@
             <Header />
         </el-header>
         <el-container class="app-container_main">
-            <el-aside><Material /></el-aside>
-            <el-main><Factory /></el-main>
-            <el-aside><Attribute /></el-aside>
+            <el-aside class="left"><Material /></el-aside>
+            <el-main class="center"><Factory /></el-main>
+            <el-aside class="right"><Attribute /></el-aside>
         </el-container>
     </el-container>
 </template>
@@ -14,7 +14,7 @@
 <script setup lang="ts">
 defineOptions({ name: 'appEditor' })
 import Header from './components/Header.vue'
-import Material from './components/Material.vue'
+import Material from './components/material/index.vue'
 import Factory from './components/Factory.vue'
 import Attribute from './components/Attribute.vue'
 </script>
@@ -24,5 +24,16 @@ import Attribute from './components/Attribute.vue'
     width: 100%;
     height: 100%;
     overflow: hidden;
+    &_header{
+        height: auto;
+        padding: 0;
+    }
+    &_main{
+        overflow: hidden;
+        .center{
+            padding: 0;
+            background-color: #F5F5F5;
+        }
+    }
 }
 </style>
