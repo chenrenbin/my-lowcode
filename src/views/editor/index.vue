@@ -13,9 +13,9 @@
 
 <script setup lang="ts">
 defineOptions({ name: 'appEditor' })
-import Header from './components/Header.vue'
+import Header from './components/header/index.vue'
 import Material from './components/material/index.vue'
-import Factory from './components/Factory.vue'
+import Factory from './components/factory/index.vue'
 import Attribute from './components/Attribute.vue'
 </script>
 

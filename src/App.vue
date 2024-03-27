@@ -9,13 +9,14 @@
 <script setup lang="ts">
 import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 
-// import { provide } from 'vue'
-// import { initVisualData, injectKey, localKey } from '@/visual-editor/hooks/useVisualData';
-// const visualData = initVisualData();
-//   // 注入可视化编辑器所有配置
-//   provide(injectKey, visualData);
-//   const { jsonData } = visualData;
-//   window.addEventListener('beforeunload', () => {
-//     sessionStorage.setItem(localKey, JSON.stringify(jsonData));
-//   });
+import { provide } from 'vue'
+import { initVisualData, injectKey, localKey } from '@/views/editor/hooks/useVisualData';
+const visualData = initVisualData();
+console.log('visualData', visualData)
+  // 注入可视化编辑器所有配置
+  provide(injectKey, visualData);
+  const { jsonData } = visualData;
+  window.addEventListener('beforeunload', () => {
+    sessionStorage.setItem(localKey, JSON.stringify(jsonData));
+  });
 </script>

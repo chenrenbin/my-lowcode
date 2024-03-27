@@ -19,7 +19,7 @@
 
 <script setup lang="ts">
 import { User } from '@element-plus/icons-vue'
-import { useTools } from '../hooks/useTools'
+import { useTools } from '@/views/editor/hooks/useTools'
 
 defineOptions({ name: 'editorHeader' })
 

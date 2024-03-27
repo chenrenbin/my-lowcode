@@ -20,4 +20,9 @@ setupElementPlus(app)
 // 使用vant插件
 setupVant(app);
 
+app.config.globalProperties.$$refs = {};
+// if (import.meta.env.DEV) {
+window.$$refs = app.config.globalProperties.$$refs;
+// }
+
 app.mount('#app')
